@@ -1,0 +1,86 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.bloverview {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.bloverview figcaption {
+    text-align: center;
+}
+
+.bloverview figure {
+    display: inline-block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.bloverview img {
+    width: 300px; /* should allow 4 images in a row on 1280 screen resolution */
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 2px;
+    text-align: center;
+    vertical-align: middle;
+    width: 45px;
+}
+
+td {
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+td img {
+    margin: auto;
+    display: block;
+}
+
+th span {
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    white-space: nowrap;
+    font-family: sans-serif;
+}
+
+.flag {
+    border: 1px solid #777777;
+}
+
+.tablearea {
+    overflow-y: scroll;
+    overflow-x: scroll;
+    width: 100%;
+    max-height: 670px;
+    display: inline-block;
+}
+
+.tableFixHead th {
+    background-color: white;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+    padding: 3px;
+    position: sticky;
+    top: 0;
+}
+
+.sticky-left {
+    background: white;
+    border: 1px solid black;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.5);
+    left: 0;
+    position: sticky;
+    white-space: nowrap;
+}
